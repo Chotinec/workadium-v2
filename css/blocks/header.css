@@ -1,0 +1,20 @@
+.header {
+  background-color: #27273e;
+
+}
+
+.header__container {
+  position: relative;
+  padding: 13px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-contacts__phone,
+.company-contacts__schedule {
+  display: block;
+}
+
+.company-contacts__schedule {
+  display: inline-block;
+}

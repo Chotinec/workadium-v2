@@ -1,0 +1,33 @@
+.pattern {
+  background: #27273e;
+  position: relative;
+  width: 274px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+
+.pattern__picture {
+  background-image: url('../../images/banner/pattern.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 23px;
+  padding-bottom: 26px;
+  padding-left: 10px;
+  padding-right: 8px;
+}
+
+.pattern__text {
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.pattern__text-red {
+  color: #ec1e79;
+  font-weight: 700;
+}

@@ -1,0 +1,107 @@
+.features {
+  font-family: "Gotham Pro";
+  width: 272px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 45px;
+  margin-right: 24px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #e8e9ed;
+}
+
+.features__wrapper {
+  text-align: center;
+  width: 195px;
+}
+
+.section-title--faetures {
+  margin-bottom: 64px;
+}
+
+.features__options {
+  padding-left: 24px;
+  text-align: center;
+  display: flex;
+  list-style: none;
+}
+
+.features__options-item {
+  margin-right: 68px;
+}
+
+.features__options-item:last-child {
+  margin-right: 0;
+}
+
+.features__top-name {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.features__description-name {
+  margin-bottom: 15px;
+  color: #212121;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.88px;
+}
+
+.features__description-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.features__description-list{
+  list-style: disc;
+  text-align: left;
+  list-style-position: inside;
+  font-size: 18px;
+  color: #cc3366;
+  margin-left: 5px;
+}
+
+.features__description-list span {
+  color: #221f1f;
+}
+
+.features__icon {
+  display: flex;
+  background-color: #27273e;
+  height: 68px;
+  width: 68px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.features__icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.features__icon--flower::after {
+  width: 27px; height: 31px;
+  background: url('../../images/sprites/features_icons.png')  -62px -10px;;
+}
+
+.features__icon--star::after {
+  width: 32px; height: 32px;
+  background: url('../../images/sprites/features_icons.png') -10px -10px;
+}
+
+.features__icon--pallete::after {
+  width: 28px; height: 29px;
+  background: url('../../images/sprites/features_icons.png') -109px -10px;;
+}

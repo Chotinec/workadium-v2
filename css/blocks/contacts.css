@@ -1,0 +1,83 @@
+.contacts {
+  text-align: right;
+  font-style: normal;
+}
+
+.company-contacts__phone {
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.company-contacts__schedule {
+  opacity: 0.7;
+  color: #ec1e79;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: .3s;
+}
+
+.contacts__dropddown {
+  position: relative;
+  display: inline-flex;
+  z-index: 1;
+}
+
+.contacts__dropdown-window {
+  position: absolute;
+  width: 163px;
+  height: 81px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  right: 0;
+  margin-top: 21px;
+  opacity: 0;
+  transition: opacity .4s;
+  left: -99999px; 
+}
+
+.contacts__dropdown-window::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 30px;
+  left: 0;
+  right: 0;
+  top: -29px;
+  /* transition: .3s; */
+}
+
+.contacts__dropdown-window--img {
+  background-image: url('../../images/dropdown/Rounded_Rectangle_2.png');
+}
+
+.contacts__dropddown:hover .company-contacts__schedule {
+  color: #5dd1f8;
+}
+
+.contacts__dropddown:hover .contacts__dropdown-window {
+  left: -49px;
+  opacity: 1;
+}
+
+.contacts__dropdown-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Gotham Pro";
+  font-weight: 300;
+  font-size: 14px;
+  width: 145px;
+  height: 35px;
+  text-align: left;
+}
+
+.colored {
+  color: #ec1e79;
+  font-weight: 700;
+}

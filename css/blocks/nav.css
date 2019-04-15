@@ -1,0 +1,223 @@
+.nav {
+  list-style: none;
+}
+
+.nav__link {
+  display: flex;
+  align-items: baseline;
+  transition: 0.3s;
+}
+
+.nav__item {
+  margin-right: 85px;
+  display: inline-block;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__icon {
+  width: 33px;
+  height: 20px;
+  background: center center no-repeat;
+  margin-right: 10px;
+  position: relative;
+}
+
+.nav__icon:last-child {
+  margin-bottom: 0;
+}
+
+.nav__icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../../images/sprites/nav_icons.png') no-repeat;
+  transition: .3s;
+}
+
+.nav__icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../../images/sprites/nav_icons.png') no-repeat;
+  opacity: 0;
+}
+
+.nav__link:hover .nav__icon::after {
+  opacity: 1;
+}
+
+.nav__link:hover .nav__icon::before {
+  opacity: 0;
+}
+
+.nav__icon--main::before {
+  width: 17px;
+  height: 15px;
+  background-position: -90px -10px;
+}
+
+.nav__icon--main::after {
+  width: 17px;
+  height: 15px;
+  background-position: -90px -45px;
+}
+
+.nav__icon--star::before {
+  width: 20px; height: 18px;
+  background-position: -10px -10px;
+}
+
+.nav__icon--star::after {
+  width: 20px; height: 18px;
+  background-position: -50px -10px;
+}
+
+.nav__icon--wallet::before {
+  width: 20px; height: 18px;
+  background-position: -10px -48px;
+}
+
+.nav__icon--wallet::after {
+  width: 19px; height: 16px;
+  background-position: -49px -48px;
+}
+
+.nav__item.active .nav__title {
+  color: #221f1f;
+}
+
+.nav__item.active .nav__icon::after {
+  opacity: 1;
+}
+
+.nav__item.active .nav__icon::before {
+  opacity: 0;
+}
+
+.nav__link:hover .nav__title {
+  color: black;
+}
+
+.nav__title {
+  color: #ec1e79;
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: .3s;
+}
+
+/* -----new----- */
+
+.nav__icon-main {
+  width: 33px;
+  height: 20px;
+  background: center center no-repeat;
+  margin-right: 10px;
+  position: relative;
+}
+
+.nav__icon-main:last-child {
+  margin-bottom: 0;
+}
+
+.nav__icon-main::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../../images/sprites/nav_icons_main.png') no-repeat;
+  transition: .3s;
+}
+
+.nav__icon-main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../../images/sprites/nav_icons_main.png') no-repeat;
+  opacity: 0;
+  transition: .3s;
+}
+
+.nav__link:hover .nav__icon-main::after {
+  opacity: 1;
+}
+
+.nav__link:hover .nav__icon-main::before {
+  opacity: 0;
+}
+
+.nav__icon--main-main::before {
+  width: 17px;
+  height: 15px;
+  background-position: -90px -10px;
+}
+
+.nav__icon--main-main::after {
+  width: 17px;
+  height: 15px;
+  background-position: -90px -45px;
+}
+
+.nav__icon--star-main::before {
+  width: 20px; height: 18px;
+  background-position: -10px -10px;
+}
+
+.nav__icon--star-main::after {
+  width: 20px; height: 18px;
+  background-position: -50px -10px;
+}
+
+.nav__icon--wallet-main::before {
+  width: 19px; height: 16px;
+  background-position: -10px -48px;
+}
+
+.nav__icon--wallet-main::after {
+  width: 19px; height: 16px;
+  background-position: -49px -48px;
+}
+
+.nav__item.active .nav__title-main {
+  color: #ec1e79;
+}
+
+.nav__item.active .nav__icon-main::after {
+  opacity: 1;
+}
+
+.nav__item.active .nav__icon-main::before {
+  opacity: 0;
+}
+
+.nav__link:hover .nav__title-main {
+  color: #ec1e79;
+}
+
+.nav__title-main {
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: .3s;
+}

@@ -1,0 +1,23 @@
+.comments {
+  margin-top: 7px;
+}
+
+.comments__list {
+  list-style: none;
+  margin-bottom: 43px;
+}
+
+.section-title--comments {
+  margin-bottom: 11px;
+}
+
+.comments__item {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.comments__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0; 
+}
