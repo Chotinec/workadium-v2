@@ -1,7 +1,6 @@
 .footer {
   background-color: #27273e;
   min-width: 1100px;
-  height: 77px;
   font-family: "Gotham Pro";
 }
 
@@ -11,14 +10,20 @@
   justify-content: space-between;
 }
 
-.footer__text {
+.copyright {
+  max-width: 264px;
   text-align: left;
-  margin-top: 14px;
+  margin-top: 11px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 300;
+  line-height: 18px;
 }
 
 .strong {
   font-weight: 700;
+}
+
+.copyright-link {
+  color: #ffffff;
 }

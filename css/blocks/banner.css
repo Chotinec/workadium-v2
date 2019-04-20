@@ -1,4 +1,10 @@
 .banner {
   background-color: #27273e;
   position: relative;
+  margin-bottom: 11px;
+}
+
+.banner__bg {
+  height: 390px;
+  display: block;
 }

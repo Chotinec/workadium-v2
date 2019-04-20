@@ -14,7 +14,7 @@
     <div class="wrapper__content">
       <header class="header">
         <div class="container header__container">
-          <div class="header__logo">
+          <div class="logo">
             <a href="../index.html" class="header__logo-link">
               <img src="../images/logo-fig.png" alt="" class="logo__picture">
             </a>
@@ -23,10 +23,13 @@
             <a href="tel:+78000039210" class="company-contacts__phone">8 (800) 00-392-10</a>
             <div class="contacts__dropddown">
               <a href="#" class="company-contacts__schedule">График работы</a>
-              <div class="contacts__dropdown-window contacts__dropdown-window--img">
-                <div class="contacts__dropdown-text">
-                  <p class="colored">пн-вс: 09:00-20:00</p>
-                  <p>обед: 14:00-14:30</p>
+              <div class="contacts__dropdown-window">
+                <div class="triangle"></div>
+                <div class="contacts__dropdown-window-wrapper">
+                  <div class="contacts__dropdown-text">
+                    <p class="colored">пн-вс: 09:00-20:00</p>
+                    <p>обед: 14:00-14:30</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -79,19 +82,19 @@
           <main class="page-content">
             <aside class="page-content__nav-comments">
               <ul class="nav">
-                <li class="nav__item">
+                <li class="nav__item nav__item-comments">
                   <a href="../index.html" class="nav__link">
                     <div class="nav__icon nav__icon--main"></div>
                     <div class="nav__title nav__active--title">ГЛАВНАЯ</div>
                   </a>
                 </li>
-                <li class="nav__item active">
+                <li class="nav__item nav__item-comments active">
                   <a href="#" class="nav__link">
                     <div class="nav__icon nav__icon--star"></div>
                     <div class="nav__title">ОТЗЫВЫ</div>
                   </a>
                 </li>
-                <li class="nav__item">
+                <li class="nav__item nav__item-comments">
                   <a href="./prices.html" class="nav__link">
                     <div class="nav__icon nav__icon--wallet"></div>
                     <div class="nav__title">ТАРИФЫ</div>
@@ -141,7 +144,7 @@
                   </div>
                 </li>
                 <li class="avatar">
-                  <div class="avatar__picture">
+                  <div class="avatar__picture-no-content">
                     <div class="avatar__picture-wrapper-no-content">
                       <img src="../images/content/comments/logo-fig.png" alt="" class="avatar__img">
                     </div>
@@ -150,13 +153,11 @@
                     <time class="avatar__date">22.12.2015</time>
                     <h4 class="avatar__name">Елена Сургай</h4>
                     <p class="avatar__description-text">
-                      Захожу сюда не часто, так как не мой район, но когда бываю в центре, то
-                      периодически нужно место для плодотворной работы. Интернет-клубы не
-                      подходят, так как не обеспечивают такой уровень сервиса, как Воркадиум.
-                      Здесь я нахожу вдохновение и могу выделить время для творчества.
-                      Желаю Воркадиуму процветания и развития. Если будете открывать
-                      филиалы, обратите внимание на Алексеевский район, я буду вашим
-                      постоянным клиентом :)
+                      Захожу сюда не часто, так как не мой район, но когда бываю в центре, то периодически нужно место
+                      для плодотворной работы. Интернет-клубы не подходят, так как не обеспечивают такой уровень
+                      сервиса, как Воркадиум. Здесь я нахожу вдохновение и могу выделить время для творчества. Желаю
+                      Воркадиуму процветания и развития. Если будете открывать филиалы, обратите внимание на
+                      Алексеевский район, я буду вашим постоянным клиентом :)
                     </p>
                   </div>
                 </li>
@@ -181,8 +182,8 @@
                   </div>
                 </li>
               </ul>
-              <div class="pagination">
-                <span class="pagination__display">Страница 1 из 7</span>
+              <div class="pagination pagination-comments">
+                <span class="pagination__display pagination__display-comments">Страница 1 из 7</span>
                 <a class="pagination__controls">
                   <a href="#" class="pagination__prev">
                     <img src="../images/numbers/prev.png" alt="<" class="pagination__prev-icon">
@@ -227,61 +228,62 @@
                   <a href="#" class="pagination__next">
                     <img src="../images/numbers/next.png" alt=">" class="pagination__next-icon">
                   </a>
-                </div>
               </div>
-            </section>
-          </main>
         </div>
+        </section>
+        </main>
       </div>
-      <div class="form">
-        <div class="form__content">
-          <form action="" class="form__tag">
-            <div class="form__title">Оставить отзыв</div>
-            <div class="form__row">
-              <label class="form__block">
-                <div class="form__block-title">Ваше имя</div>
-                <input type="text" placeholder="Andrew" class="form__input form-field">
-              </label>
-              <label class="form__block">
-                <div class="form__block-title">Ссылка на VK профиль</div>
-                <input type="text" placeholder="vk.com/example" class="form__input form-field">
-              </label>
-            </div>
-            <div class="form__row">
-              <label class="form__block">
-                <div class="form__block-title">Текст отзыва</div>
-                <textarea name="" class="form__textarea form-field" placeholder="">Мне понравилось</textarea>
-              </label>
-            </div>
-            <div class="form__row">
-              <div class="form__block">
-                <div class="form__block-title">Отображать фото в отзыве?</div>
-                <div class="form__radio-block">
-                  <label for="yes" class="form__radio-trigger">
-                    <input type="radio" id="yes" name="photo" class="visuallyHidden">
-                    <span class="form__radio-custom"></span>
-                    <span class="form__radio-title">Да</span>
-                  </label>
-                  <label for="no" class="form__radio-trigger">
-                    <input type="radio" id="no" name="photo" class="visuallyHidden">
-                    <span class="form__radio-custom"></span>
-                    <span class="form__radio-title">Нет</span>
-                  </label>
-                </div>
+    </div>
+    <div class="form">
+      <div class="form__content">
+        <form action="" class="form__tag">
+          <div class="form__title">Оставить отзыв</div>
+          <div class="form__row">
+            <label class="form__block">
+              <div class="form__block-title">Ваше имя</div>
+              <input type="text" placeholder="Andrew" class="form__input form-field">
+            </label>
+            <label class="form__block">
+              <div class="form__block-title">Ссылка на VK профиль</div>
+              <input type="text" placeholder="vk.com/example" class="form__input form-field">
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="form__block">
+              <div class="form__block-title">Текст отзыва</div>
+              <textarea name="" class="form__textarea form-field form-field-textarea"
+                placeholder="">Мне понравилось</textarea>
+            </label>
+          </div>
+          <div class="form__row form__row-textarea">
+            <div class="form__block">
+              <div class="form__block-title">Отображать фото в отзыве?</div>
+              <div class="form__radio-block">
+                <label for="yes" class="form__radio-trigger">
+                  <input type="radio" id="yes" name="photo" class="visuallyHidden">
+                  <span class="form__radio-custom"></span>
+                  <span class="form__radio-title">Да</span>
+                </label>
+                <label for="no" class="form__radio-trigger">
+                  <input type="radio" id="no" name="photo" class="visuallyHidden">
+                  <span class="form__radio-custom"></span>
+                  <span class="form__radio-title">Нет</span>
+                </label>
               </div>
-              <button type="submit" class="form__button"><span class=form__button-text>Отправить</span></button>
             </div>
-          </form>
-        </div>
+            <button type="submit" class="form__button"><span class=form__button-text>Отправить</span></button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
+  </div>
   <footer class="footer">
     <div class="container footer__container">
-      <div class="footer__text">
-        <p class="footer__text-paragraph">Сделано с любовью и старанием</p>
-        <p class="footer__text-paragraph">на курсе «HTML + CSS» в <span class="strong">LoftSchool</span>.</p>
-        <p class="footer__text-paragraph">Автор работы: <span class="strong">Хотинец Артем</span></p>
+      <div class="copyright">
+        Сделано с любовью и старанием на
+        курсе «HTML + CSS» в <a href="#" class="copyright-link"><span class="strong">LoftSchool</span></a>.
+        Автор работы: <span class="strong">Хотинец Артем</span></p>
       </div>
       <div class="logo">
         <a href="/" class=zlogo-link">

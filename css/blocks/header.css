@@ -5,9 +5,12 @@
 
 .header__container {
   position: relative;
-  padding: 13px 0;
   display: flex;
   justify-content: space-between;
+}
+
+.header__container--padding {
+  /* padding: 10px 0; */
 }
 
 .company-contacts__phone,

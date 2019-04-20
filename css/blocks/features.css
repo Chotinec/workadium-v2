@@ -5,7 +5,7 @@
   padding-bottom: 23px;
   padding-left: 45px;
   margin-right: 24px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-bottom: 25px;
   border: 1px solid #e8e9ed;
 }
@@ -62,11 +62,16 @@
   list-style-position: inside;
   font-size: 18px;
   color: #cc3366;
-  margin-left: 5px;
+  margin-left: 12px;
 }
 
-.features__description-list span {
+.features__description-item {
+  margin-top: 5px;
+}
+
+.features__description-item span {
   color: #221f1f;
+  margin-left: 10px;
 }
 
 .features__icon {

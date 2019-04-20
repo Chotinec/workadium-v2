@@ -1,7 +1,10 @@
 .pagination {
   display: flex;
-  justify-content: center;
-  /* margin-bottom: 70px; */
+  margin-left: 195px;
+}
+
+.pagination-comments {
+  margin-left: 214px;
 }
 
 .pagination__controls {
@@ -49,7 +52,11 @@
   font-family: "Gotham Pro";
   font-size: 14px;
   font-weight: 300;
-  margin-right: 20px;
+  margin-right: 15px;
+}
+
+.pagination__display-comments {
+  margin-right: 25px;
 }
 
 .pagination__prev {

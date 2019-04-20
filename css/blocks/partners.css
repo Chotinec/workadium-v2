@@ -5,15 +5,14 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .partners {
-  margin-top: 17px;
+  margin-top: 26px;
   width: 272px;
   border: 1px solid #e8e9ed;
   position: relative;
-  margin-left: 20px;
   margin-right: 18px;
   margin-bottom: 24px;
 }
@@ -23,7 +22,11 @@
 }
 
 .partner__item {
-  margin-bottom: 37px;
+  /* max-width: 141px;
+  max-height: 55px; */
+  /* width: auto; */
+  /* height: auto; */
+  margin-bottom: 31px;
   text-align: center;
 }
 
@@ -37,4 +40,6 @@
 
 .parner__logo:hover {
   filter: grayscale(0);
+    /* width: 141px;
+    height: 37px; */
 }
